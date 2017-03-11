@@ -1,0 +1,52 @@
+<!doctype html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Prosty kalkulator w JavaScript"/>
+		<title>Karkurator</title>	
+	</head>
+	
+	<center> <font size="8" font color="light blue">KARKURATOR!</font></center>
+	
+	<body>
+		<form name="a">
+		<br/> <Br/><Br/><br/>
+			Podaj pierwszą liczbę: <input type="text" name="liczba1"/><br/>
+			Podaj drugą liczbę: <input type="text" name="liczba2"/><br/> <Br/>
+			<input type="button" onclick="dodaj();" value="Dodaj"/>
+			<input type="button" onclick="odejmij();" value="Odejmij"/>
+			<input type="button" onclick="pomnoz();" value="Pomnóż"/>
+			<input type="button" onclick="podziel();" value="Podziel"/>
+			<input type="button" onclick="reszta();" value="Wyświetl resztę z dzielenia"/> <Br/><Br/><Br/>
+			Wynik to: <input type="text" name="wynik"/> 
+	</form>
+	
+	<script type="text/javascript">
+		
+		function dodaj()
+		
+		document.a.wynik.value=parseFloat(document.a.liczba1.value)+parseFloat(document.a.liczba2.value);
+		
+		function odejmij()
+		
+		document.a.wynik.value=parseFloat(document.a.liczba1.value)-parseFloat(document.a.liczba2.value);
+		
+		function pomnoz()
+		
+		document.a.wynik.value=parseFloat(document.a.liczba1.value)*parseFloat(document.a.liczba2.value);
+		
+		function podziel()
+		
+		document.a.wynik.value=parseFloat(document.a.liczba1.value)/parseFloat(document.a.liczba2.value);
+	
+		function reszta()
+		
+		document.a.wynik.value=parseFloat(document.a.liczba1.value)%parseFloat(document.a.liczba2.value);
+	
+			
+	</script>
+
+
+		</body>
+
+
+</html>
