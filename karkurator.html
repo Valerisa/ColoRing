@@ -28,7 +28,7 @@
 		
 		function odejmij()
 		
-		document.a.wynik.value=parseFloat(document.a.liczba1.value)-parseFloat(document.a.liczba2.value);
+		document.a.wynik.value=parseFloat(document.a.liczba1.value)-parseFloat(document.a.liczba2.value); // Int - liczby całkowite, Float wymierne
 		
 		function pomnoz()
 		
@@ -41,6 +41,13 @@
 		function reszta()
 		
 		document.a.wynik.value=parseFloat(document.a.liczba1.value)%parseFloat(document.a.liczba2.value);
+		
+		function Info()
+		{
+		if (!confirm("To jest mój fantastyczny kalkulator. Kliknij OK jeżeli chcesz coś policzyć. Kliknij ANULUJ, jeżeli masz arytmofobię!"))
+		history.go(-1);return " "}
+
+		document.writeln(Info())
 	
 			
 	</script>
